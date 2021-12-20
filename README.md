@@ -16,7 +16,7 @@ Criteria:
 
 The images below include a screenshot of the website, the password length prompt, an alert for length error, a prompt, and an image of a randomly generated password.
 
-I learned how to apply variables, functions, arrays, click buttons, and more.
+I learned how to apply variables, functions, arrays, click buttons, alerts, and applied knowledge from previous weeks to the html page.
 
 
 ![website](https://user-images.githubusercontent.com/89229908/146708421-10df4e8e-13fe-4b8d-ae4d-ebb7b0b60940.JPG)
