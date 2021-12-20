@@ -42,7 +42,7 @@ var generatePassword=function(){
 }    
 }
 
-//getting length of password input, parse = receiving the input string, if not within the required 8-128 the user received an alert to try again
+//getting length of password input, parse = receiving the input string, if not within the required 8-128 the user will receive an alert to try again
 function getlength(){
    var characterParse=parseInt(characterQuantity)
    if(characterParse>=8&&characterParse<=128){
