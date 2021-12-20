@@ -1,4 +1,5 @@
 // Assignment code here
+
 //generate element by ID, arrays of data
 var generateBtn=document.getElementById("generate")
 var upperCase=["A","B","C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -14,7 +15,7 @@ var useLowerCase=""
 var useNumbers=""
 var useSpecialCharactors=""
 
-//entering prompts
+//entering user prompts
 var generatePassword=function(){
   charactorQuantity= window.prompt("Enter a number between 8 and 128 for password length")
   useUpperCase= window.prompt("Include upper case letters, yes or no","no")
@@ -22,12 +23,12 @@ var generatePassword=function(){
   useNumbers= window.prompt("Include numbers, yes or no","no")
   useSpecialCharactors= window.prompt("Include special characters, yes or no","no")
 
-  //utilize the function for each category
-  getcharactorQuantity()
-     getuseUpperCase()
-     getuseLowerCase()
-     getuseNumbers()
-     getusespecialcharactors()
+  //functions for each category
+      getcharactorQuantity()
+      getuseUpperCase()
+      getuseLowerCase()
+      getuseNumbers()
+      getusespecialcharactors()
 
 //using Math.floor and Math.random to console log a random password
      if(arrayofAcceptableValues.length>0){
@@ -39,8 +40,56 @@ var generatePassword=function(){
  console.log(passWord)
       }
 }    
+}
 
+//getting length of password input, parse = receiving the input string, if not within the required 8-128 the user received an alert to try again
+function getlength(){
+   var charactorParse=parseInt(charactorQuantity)
+   if(charactorParse>=8&&charactorParse<=128){
+length=charactorParse
+   }else{
+       alert("Not accepted, try again")
+       getlength()
+   }
+  }
 
+  //to use or not use upper case in the password, if yes then use
+  function getuseUpperCase(){
+      if(useUpperCase==="yes"||useUpperCase==="no"){
+          if(useUpperCase==="yes"){
+         arrayofAcceptableValues.push(upperCase)
+          }
+      }
+  }
+  
+ //to use or not use lower case in the password, if yes then use
+  function getuseLowerCase(){
+     if(useLowerCase==="yes"||useLowerCase==="no"){
+         if(useLowerCase==="yes"){
+        arrayofAcceptableValues.push(lowerCase)
+         }
+     }
+ }
+
+ //to use or not use numbers in the password, if yes then use
+ function getuseNumbers(){
+     if(useNumbers==="yes"||useNumbers==="no"){
+         if(useNumbers==="yes"){
+        arrayofAcceptableValues.push(number)
+         }
+     }
+ } 
+ 
+  //to use or not use special characters in the password, if yes then use
+ function getusespecialcharactors(){
+     if(useSpecialCharactors==="yes"||useSpecialCharactors==="no"){
+         if(useSpecialCharactors==="yes"){
+        arrayofAcceptableValues.push(specialCharactors)
+         }
+     }
+ } 
+
+ 
 
 
 
