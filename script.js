@@ -18,10 +18,10 @@ var useSpecialCharacters=""
 //entering user prompts
 var generatePassword=function(){
   characterQuantity= window.prompt("Enter a number between 8 and 128 for password length")
-  useUpperCase= window.prompt("Include upper case letters, yes or no","no")
-  useLowerCase= window.prompt("Include lower case letters, yes or no","no")
-  useNumbers= window.prompt("Include numbers, yes or no","no")
-  useSpecialCharacters= window.prompt("Include special characters, yes or no","no")
+  useUpperCase= window.prompt("Include upper case letters? yes or no","no")
+  useLowerCase= window.prompt("Include lower case letters? yes or no","no")
+  useNumbers= window.prompt("Include numbers? yes or no","no")
+  useSpecialCharacters= window.prompt("Include special characters? yes or no","no")
 
   //functions for each category
     getlength()
