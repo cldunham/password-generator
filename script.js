@@ -14,6 +14,33 @@ var useLowerCase=""
 var useNumbers=""
 var useSpecialCharactors=""
 
+//entering prompts
+var generatePassword=function(){
+  charactorQuantity= window.prompt("Enter a number between 8 and 128 for password length")
+  useUpperCase= window.prompt("Include upper case letters, yes or no","no")
+  useLowerCase= window.prompt("Include lower case letters, yes or no","no")
+  useNumbers= window.prompt("Include numbers, yes or no","no")
+  useSpecialCharactors= window.prompt("Include special characters, yes or no","no")
+
+  //utilize the function for each category
+  getcharactorQuantity()
+     getuseUpperCase()
+     getuseLowerCase()
+     getuseNumbers()
+     getusespecialcharactors()
+
+//using Math.floor and Math.random to console log a random password
+     if(arrayofAcceptableValues.length>0){
+      for(var i=0;i<length;i++){
+ var pointToAcceptableValues= Math.floor( Math.random()*arrayofAcceptableValues.length)
+ var addarrayofAcceptableValues=arrayofAcceptableValues[pointToAcceptableValues]
+ var results=Math.floor(Math.random()*addarrayofAcceptableValues.length)
+ passWord+=addarrayofAcceptableValues[results]
+ console.log(passWord)
+      }
+}    
+
+
 
 
 
